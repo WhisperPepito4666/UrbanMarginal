@@ -1,3 +1,4 @@
+package Modèle;
 /**
  * Gestion du jeu côté client
  *

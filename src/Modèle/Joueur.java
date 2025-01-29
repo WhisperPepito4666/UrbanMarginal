@@ -1,3 +1,5 @@
+package Modèle;
+
 /**
  * Gestion des joueurs
  *
@@ -187,6 +189,14 @@ public class Joueur extends Objet {
 	 * Le joueur se déconnecte et disparait
 	 */
 	public void departJoueur() {
+	}
+	
+	/**
+	* Contrôle si le joueur touche un des murs
+	* @return true si un joueur touche un mur
+	*/
+	private Boolean toucheMur() {
+		return null;
 	}
 	
 }
