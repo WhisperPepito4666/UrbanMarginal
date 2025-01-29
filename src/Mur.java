@@ -10,4 +10,9 @@ public class Mur extends Objet {
 	public Mur() {
 	}
 	
+	/**
+	 * Affiche le mur
+	 */
+	private void afficheMur() {
+	}
 }

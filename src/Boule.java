@@ -16,6 +16,12 @@ public class Boule extends Objet {
 	}
 	
 	/**
+	 * Affiche la boule
+	 */
+	public void Affiche() {
+	}
+	
+	/**
 	 * Tire d'une boule
 	 */
 	public void tireBoule() {
