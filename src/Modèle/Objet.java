@@ -24,32 +24,4 @@ public abstract class Objet {
 		return null;
 	}
 	
-	/**
-	 * getter sur posX
-	 */
-	public Integer getposX() {
-		return posX;
-	}
-	
-	/**
-	 * getter sur posY
-	 */
-	public Integer getposY() {
-		return posY;
-	}
-	
-	/**
-	 * setter sur posX
-	 */
-	public void setposX(Integer posX) {
-		this.posX=posX;
-	}
-	
-	/**
-	 * setter sur posY
-	 */
-	public void setposY(Integer posY) {
-		this.posY=posY;
-	}
-	
 }

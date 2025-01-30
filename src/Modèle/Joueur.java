@@ -20,11 +20,6 @@ public class Joueur extends Objet {
 	private static final int PERTE = 2 ; 
 	
 	/**
-	 * vie du joueur
-	 */
-	private int pv=MAXVIE;
-	
-	/**
 	 * pseudo saisi
 	 */
 	private String pseudo ;
@@ -46,6 +41,16 @@ public class Joueur extends Objet {
 	private Boule boule ;
 	
 	/**
+	* vie restante du joueur
+	*/
+	private int vie ;
+	
+	/**
+	* tourné vers la gauche (0) ou vers la droite (1)
+	*/
+	private int orientation ;
+	
+	/**
 	 * Constructeur
 	 */
 	public Joueur() {
@@ -54,79 +59,9 @@ public class Joueur extends Objet {
 	/**
 	 * Initialisation d'un joueur (pseudo et numéro, calcul de la 1ère position, affichage, création de la boule)
 	 */
-	public void initPerso(String pseudo,Integer numPerso) {
+	public void initPerso() {
 	}
 
-	/**
-	 * getter sur MAXVIE
-	 */
-	public Integer getMAXVIE() {
-		return MAXVIE;
-	}
-	
-	/**
-	 * getter sur GAIN
-	 */
-	public Integer getGAIN() {
-		return GAIN;
-	}
-	
-	/**
-	 * getter sur PERTE
-	 */
-	public Integer getPERTE() {
-		return PERTE;
-	}
-	
-	/**
-	 * getter sur pv
-	 */
-	public Integer getpv() {
-		return pv;
-	}
-	
-	/**
-	 * getter sur pseudo
-	 */
-	public String getpseudo() {
-		return pseudo;
-	}
-	
-	/**
-	 * getter sur numPerso
-	 */
-	public Integer getnumPerso() {
-		return numPerso;
-	}
-	
-	/**
-	 * getter sur etape
-	 */
-	public Integer getetape() {
-		return etape;
-	}
-	
-	/**
-	 * setter sur pv
-	 */
-	public void setpv(Integer pv) {
-		this.pv=pv;
-	}
-	
-	/**
-	 * setter sur psuedo
-	 */
-	public void setpseudo(String pseudo) {
-		this.pseudo=pseudo;
-	}
-	
-	/**
-	 * setter sur  numPerso
-	 */
-	public void setnumPerso(Integer numPerso) {
-		this.numPerso=numPerso;
-	}
-	
 	/**
 	 * Calcul de la première position aléatoire du joueur (sans chevaucher un autre joueur ou un mur)
 	 */
@@ -152,12 +87,6 @@ public class Joueur extends Objet {
 	}
 	
 	/**
-	 * Gère le tir du personnage
-	 */
-	private void tire() {
-	}
-
-	/**
 	 * Contrôle si le joueur touche un des autres joueurs
 	 * @return true si deux joueurs se touchent
 	 */
@@ -178,6 +107,14 @@ public class Joueur extends Objet {
 	}
 	
 	/**
+	* Contrôle si le joueur touche un des murs
+	* @return true si un joueur touche un mur
+	*/
+	private Boolean toucheMur() {
+		return null;
+	}
+	
+	/**
 	 * vrai si la vie est à 0
 	 * @return true si vie = 0
 	 */
@@ -189,14 +126,6 @@ public class Joueur extends Objet {
 	 * Le joueur se déconnecte et disparait
 	 */
 	public void departJoueur() {
-	}
-	
-	/**
-	* Contrôle si le joueur touche un des murs
-	* @return true si un joueur touche un mur
-	*/
-	private Boolean toucheMur() {
-		return null;
 	}
 	
 }
